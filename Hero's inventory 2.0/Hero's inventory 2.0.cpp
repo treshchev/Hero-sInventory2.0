@@ -7,10 +7,12 @@
 
 int main()
 {
-	std::vector<std::string> Inventory;
+	std::vector <std::string> Inventory;
+
 	Inventory.push_back("sword");
 	Inventory.push_back("armor");
 	Inventory.push_back("shield");
+
 	std::cout << "You have " << Inventory.size() << " items.\n";
 	std::cout << "\nYour items: \n";
 
@@ -28,9 +30,9 @@ int main()
 		std::cout << Inventory[i] << std::endl;
 	}
 
-	std::cout << "\nThe item name '" << Inventory[0] << "' has";
-	std::cout << Inventory[0].size() << " letters in it.\n";
-	std::cout << "\nYour shield is destroyed in a fierce battle.";
+	std::cout << "\nThe item name '" << Inventory[0] << "' has ";
+	std::cout << Inventory[1].size() << " letters in it.\n"; // you can change the index (0-2) 
+	std::cout << "\nYour shield is destroyed in a fierce battle.\n";
 	Inventory.pop_back();
 	std::cout << "Your items:\n";
 
@@ -41,7 +43,7 @@ int main()
 
 	std::cout << "\n You were robbed of all of your possessions by a thief.";
 	Inventory.clear();
-	if (Inventory.empty())
+	if (Inventory.empty()) // my inventory is empty at all
 	{
 		std::cout << "\nYou lost all your items.\n";
 	}
